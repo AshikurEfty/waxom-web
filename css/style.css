@@ -1,0 +1,756 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style-type: none;
+}
+/*--------======== navbar css =========-------*/
+.navbar-light .navbar-nav .nav-link{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    transition: all linear .3s;
+    position: relative;
+}
+.navbar-expand-md .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #fce38a;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all linear .3s;
+}
+.navbar {
+	padding-top: 13px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    transition: all linear .3s;
+    background:none;
+}
+.navbar2{
+    background: #090909ba;
+    animation: menu 1s;
+}
+@keyframes menu{
+    from{top:-100px}
+    to{top:0px}
+}
+.navbar-brand img{
+    float:left;
+}
+.navbar-brand h3{
+    font-family: 'Raleway';
+    font-weight: 400;
+    color:#fff;
+    float:left;
+    line-height: 55px;
+}
+.navbar-expand-md .navbar-nav .nav-link:hover {
+    color: #998675;;
+}
+.navbar-expand-md .navbar-nav .nav-link.active{
+    color:#fce38a; 
+
+}
+.navbar-expand-md .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+/*-------=========== banner part start ============--------*/
+#banner {
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 340px;
+    padding-bottom: 340px;
+    position: relative;
+}
+#banner:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(3, 3, 3, 0.13);
+}
+.banner-text {
+    position: relative;
+    z-index: 999;
+}
+.banner-text h3 {
+    font-family: 'Raleway';
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.banner-text h2 {
+    font-family: 'Raleway';
+    font-size: 56px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.banner-text p{
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 0px 70px 0px 70px;
+}
+.banner-text h5 {
+    padding-top: 52px;
+}
+.banner-text a {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #998675;
+    padding: 20px 37px;
+    border-radius: 5px;
+    transition: all linear .3s;
+}
+.banner-text a:hover {
+    background: #fff;
+    color: #444;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*============= service css ==============*/
+#service {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.service-main{
+    transition: all linear .3s;
+}
+.service-main:hover{
+    color:#C8B299;
+    cursor: pointer;
+}
+.service-main .service-text1 h3{
+    transition: all linear .3s;
+}
+.service-main:hover .service-text1 h3{
+    color:#C8B299;
+}
+
+.service-main .service-border{
+    transition: all linear .3s;
+}
+.service-main:hover .service-border{
+    background:#C8B299;
+}
+.service-font{
+    font-size: 40px;
+}
+.service-text1 h3{
+    font-family: 'Raleway';
+    color:#333;
+    font-size: 22px;
+    
+}
+.service-border{
+    height:3px;
+    width:65px;
+    background: #ddd9;
+}
+.service-text2{
+    padding:0px 50px 0px 50px;
+} 
+.service-text1 p {
+    font-family: 'Montserrat';
+    font-size: 11px;
+    color: #999;
+    font-weight: 400;
+    padding-top: 3px;
+    line-height: 24px;
+}
+
+/*------======= project css ======---*/
+.project-text{
+    padding-left: 123px;
+    padding-right: 123px;
+}
+.project-text1 h2{
+    font-size: 30px;
+    font-family: 'Raleway';
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.project-text1 p{
+    font-size: 16px;
+    line-height: 27px;
+    color:#8C8C8C;
+    padding-bottom:40px;
+}
+/*---------========== tabs and navs start ==========---------*/
+#nav-tab{
+    margin:0 auto;
+    padding-left: 157px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+	color: #444;
+    background:none;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    padding: 7px 12px;
+    font-size: 14px;
+    margin-left: 20px;
+    font-family: 'Montserrat';
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover{
+    color:red;
+    
+    transition: all linear .5s;
+    border:1px solid #ddd;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background: #998675;
+    color: #fff;
+    border-radius: 5px;
+}
+.nav-tabs {
+	border-bottom: none;
+    padding-bottom: 30px;
+}
+.tab-text{
+    background: #F5F5F5;
+}
+.tab-text h4 {
+    color:#C7B299;
+    font-family: 'Raleway';
+	padding-top: 15px;
+	font-size: 20px;
+	padding-left: 15px;
+}
+.tab-text h5{
+    font-family: 'Montserrat';
+    color:#CACACA;
+    font-weight: 300;
+	padding-bottom: 30px;
+	font-size: 14px;
+	padding-left: 15px;
+}
+.tab-item{
+    position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	background: #000000a3;
+	width: 92%;
+	height: 97%;
+    opacity: 0;
+    z-index: 999;
+    transition:all linear .3s;
+    cursor: pointer;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+.link1 i{
+    color:#fff;
+    font-size: 32px;
+    transform:rotate(85deg);
+    float:left;
+    margin-left: 134px;
+    margin-top: 105px;
+}
+.link1 i:hover{
+    color:#C7B299;
+}
+.plus1 i{
+    color:#fff;
+    font-size: 30px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 105px;
+}
+.plus1 i:hover{
+    color:#C7B299;
+}
+.icon-main{
+    margin:0 auto;
+    cursor: pointer;
+}
+
+.tab-text-one{
+    margin-top:224px;
+    background:#362F2D;
+}
+.tab-text-one h4 {
+    color:#C7B299;
+    font-family: 'Raleway';
+	padding-top: 15px;
+	font-size: 20px;
+	padding-left: 15px;
+}
+.tab-text-one h5 {
+    font-family: 'Montserrat';
+    color:#fff;
+    font-weight: 300;
+	padding-bottom: 30px;
+	font-size: 12px;
+	padding-left: 15px;
+}
+
+/*------======= lorem css start ======---*/
+#lorem{
+    padding-bottom: 90px;
+}
+.tab-img{
+    position:relative;
+}
+.icon-text{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+.icon-text .icon1{
+    background:#363636d9;
+    color:#fff;
+    border-radius: 5px 5px 0px 0px;
+}
+.icon-text .icon1 h5{
+    padding: 1px 8px 1px 8px;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.icon-text .icon2{
+    background: #252525;
+    color:#fff;
+    margin-top: -10px;
+    border-radius: 0px 0px 5px 5px;
+}
+.icon-text .icon2 h5{
+    padding:5px 10px 5px 10px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+.icon-text .icon3{
+    background:#C7B299;
+    color:#fff;
+    border-radius: 5px 5px 0px 0px;
+}
+.icon-text .icon3 h5{
+    padding: 1px 8px 1px 8px;
+    font-size: 24px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+.icon-text .icon4{
+    background:#A48D72;
+    color:#fff;
+    margin-top: -10px;
+    border-radius: 0px 0px 5px 5px;
+}
+.icon-text .icon4 h5{
+    padding:5px 10px 5px 10px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.tab-text1{
+    margin-top:0px;
+    background:#FBFAF8;
+}
+.tab-text1 h4 {
+    color:#C7B299;
+    font-family: 'Raleway';
+    font-weight: 400;
+	padding-top: 15px;
+	font-size: 20px;
+	padding-left: 15px;
+}
+.tab-text1 p{
+    font-family: 'Montserrat';
+    color:#333;
+    font-weight: 300;
+	padding-bottom: 0px;
+	font-size: 12px;
+	padding-left: 15px;
+}
+.tab-text1 a{
+    padding-left: 15px;
+    color: #C7B299;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.tab-text2{
+    margin-top: 208px;
+    background:#362F2D;
+}
+.tab-text2 h4 {
+    color:#C7B299;
+    font-family: 'Raleway';
+    font-weight: 400;
+	padding-top: 15px;
+	font-size: 20px;
+	padding-left: 15px;
+}
+.tab-text2 p{
+    font-family: 'Montserrat';
+    color:#fff;
+    font-weight: 300;
+	padding-bottom: 0px;
+	font-size: 12px;
+	padding-left: 15px;
+}
+.tab-text2 a{
+    padding-left: 15px;
+    color: #C7B299;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+/*------======= load more css ======---*/
+.load-text a {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: #998675;
+    padding: 20px 37px;
+    border-radius: 5px;
+    transition: all linear .3s;
+    text-decoration: none;
+}
+.load-text a:hover {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#load{
+    padding-top:40px;
+    padding-bottom: 80px;
+}
+
+/*video start*/
+#video{
+    background: url(../images/banner1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0px;
+    position: relative;
+}
+.overlay-video{
+    position: absolute;
+    content:'';
+    background:#0000002e;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+}
+.overlay-video h3{
+    text-align: center;
+    padding-top:250px;
+    color:#fff;
+    font-size: 30px;
+    font-family: 'Raleway';
+    padding-bottom: 10px;
+}
+.overlay-video p{
+    text-align: center;
+    color:#fff;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    padding-left: 250px;
+    padding-right: 250px;
+    line-height: 25px;
+}
+.video-icon i{
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 70px;
+    color:#ffffff69;;
+    
+}
+.video-icon{
+    position: relative;
+    z-index: 99;
+}
+
+/*==== counter css start====*/
+#counter{
+    background: #3C2A21;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    
+}
+.counter-item h3{
+    color:#fff;
+    font-family: 'Montserrat';
+    font-size: 48px;
+}
+.counter-item p{
+    color:#C8B299;;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.counter-item i{
+    color:#C8B299;;
+    font-size: 45px;
+    padding-bottom: 10px;
+}
+
+/*------======= post css start ======---*/
+.post1 h2{
+    padding-top:80px;
+    font-family: 'Raleway';
+    font-size:30px;
+}
+
+/*------==== footer css start====--------*/
+
+#footer{
+    background:#191919;
+    padding-top:70px;
+    padding-bottom: 70px;
+    
+}
+.navbar-brand img{
+    float:left;
+}
+.navbar-brand h3{
+    color:#fff;
+    float:left;
+    line-height: 55px;
+}
+.footer-item h2{
+    padding-top: 14px;
+    font-size: 24px;
+    font-family: 'Raleway';
+    font-weight: 400;
+    color:#fff;
+}
+.footer-item img{
+    padding-bottom: 5px;
+}
+.footer-item a{
+    text-decoration: none;
+    color:#fff;
+    cursor:pointer;
+    transition: all linear .3s;
+}
+.footer-item a:hover{
+    color:#C7B299;
+}
+.footer-item p{
+    color:#525252;
+    font-size: 11px;
+    font-family: 'Roboto';
+    line-height: 24px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    cursor:pointer;
+    transition: all linear .3s;
+}
+.footer-item p:hover{
+    color:#C7B299;
+}
+.footer-item-text1 p{
+    transition: all linear .3s;
+    cursor:pointer;
+}
+.footer-item-text1:hover p {
+    color:#C7B299;
+}
+.footer-item h6{
+    padding-top:0px;
+    font-family:'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    color:#333;
+}
+.footer-item-text1 h6{
+    transition: all linear .3s;
+    cursor:pointer;
+}
+.footer-item-text1:hover h6 {
+    color:#fff;
+}
+/*
+.footer-item h6:hover{
+    color:#fff;
+    cursor:pointer;
+}
+*/
+.footer-item h6 span{
+    font-family:'Montserrat';
+    font-weight: 700;
+    color:#333;
+    font-size: 18px;
+}
+
+.footer-item hr{
+    background: #252525;
+}
+.footer-item span{
+    color:#00BFF3;
+}
+
+.footer-item h3{
+    font-family:'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    color:#fff;
+    text-transform:capitalize;
+    padding-bottom: 5px;
+    padding-top: 30px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+.instagram img{
+    padding-bottom: 8px;
+    padding-left: 8px;
+}
+
+/*--=========== back to top ==============--*/
+.back-top{
+    position:fixed;
+    right:20px;
+    bottom: 70px;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+.back-top i{
+    width:40px;
+    height:40px;
+    background:#000000ba;
+    color:#fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border-radius:50px;
+}
+/*--back to bottom--*/
+.back-bottom{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index: 999;
+}
+.back-bottom i{
+    width:40px;
+    height: 40px;
+    background: #000000ba;
+    color:#fff;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius:50px;
+    cursor:pointer;
+}
+
+/*------======= last-footer css start ======---*/
+#last-footer{
+    padding-top:40px;
+    padding-bottom:45px;
+    background: #000;
+}
+.last-ft-text1{
+    float: left;
+    transition: all linear .3s;
+}
+.last-ft-text1 ul li{
+    float:left;
+}
+.last-ft-text1 ul li a{
+    color:#525252;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-left:1px solid #525252;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    transition: all linear .3s;
+}
+.last-ft-text1 ul li a span{
+    color:#959595;
+}
+.last-ft-text1 ul li:first-child a{
+    border-left:none;
+    padding-left:0px;
+}
+
+.last-ft-text1 ul li a:hover{
+    color:#C7B299;
+}
+.last-ft-text1 ul li a span:hover{
+    color:#C7B299;
+}
+
+.last-ft-text2{
+    float: left;
+    transition: all linear .3s;
+}
+.last-ft-text2 ul li{
+    float:left;
+}
+.last-ft-text2 ul li a{
+    color:#525252;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    border-left:1px solid #525252;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    transition: all linear .3s;
+}
+.last-ft-text2 ul li a span{
+    color:#959595;
+}
+.last-ft-text2 ul li:first-child a{
+    border-left:none;
+    padding-left:0px;
+}
+
+.last-ft-text2 ul li a:hover{
+    color:#C7B299;
+}
+.last-ft-text2 ul li a span:hover{
+    color:#C7B299;
+}

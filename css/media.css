@@ -1,0 +1,193 @@
+/*============= extra small device ================*/
+@media (max-width: 575.98px) {
+    
+    .navbar-toggler i{
+        color:#fff;
+        font-size: 20px;
+    } 
+    .navbar-light .navbar-toggler {
+        border-color:transparent;
+    }
+    .navbar-light .navbar-toggler{
+        outline: none;
+    }
+    .navbar{
+    background: #090909ba;
+    }
+#banner {
+	padding-top: 180px;
+}
+.banner-text p {
+	padding: 0px 10px 0px 10px;
+}
+.project-text {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+    
+#nav-tab {
+	padding-left: 95px;
+}
+#banner {
+	padding-bottom: 170px;
+    }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+	margin-bottom: 5px;
+}
+.tab-text-one {
+	margin-top: 186px;
+}
+.overlay {
+	width: 92%;
+	height: 96%;
+}
+.img-fluid {
+	max-width: 101%;  
+}
+.overlay-video p {
+	 padding-left: 0px; 
+	 padding-right: 0px; 	
+}
+.counter-item h3 {
+	font-size: 24px;
+}
+.tab-text2 {
+	margin-top: 174px;
+}
+
+}
+
+
+/*============== Small Device ===============*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+     .navbar-toggler i{
+        color:#fff;
+        font-size: 20px;
+    } 
+    .navbar-light .navbar-toggler {
+        border-color:transparent;
+    }
+    .navbar-light .navbar-toggler{
+        outline: none;
+    }
+    .navbar{
+    background: #090909ba;
+    }
+#banner {
+	padding-top: 180px;
+}
+.banner-text p {
+	padding: 0px 10px 0px 10px;
+}
+.project-text {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+    
+#nav-tab {
+	padding-left: 95px;
+}
+#banner {
+	padding-bottom: 170px;
+    }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+	margin-bottom: 5px;
+}
+.tab-text-one {
+	margin-top: 186px;
+}
+.overlay {
+	width: 92%;
+	height: 96%;
+}
+.img-fluid {
+	max-width: 101%;  
+}
+.overlay-video p {
+	 padding-left: 0px; 
+	 padding-right: 0px; 	
+}
+.counter-item h3 {
+	font-size: 24px;
+}
+.tab-text2 {
+	margin-top: 174px;
+}
+    .tab-text-one {
+	margin-top: 237px;
+}
+    .overlay {
+	width: 69%;
+}
+    
+    
+}
+
+/*midium device*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-toggler i{
+        color:#fff;
+        font-size: 20px;
+    } 
+    .navbar-light .navbar-toggler {
+        border-color:transparent;
+    }
+    .navbar-light .navbar-toggler{
+        outline: none;
+    }
+    .navbar{
+    background: #090909ba;
+    }
+#banner {
+	padding-top: 180px;
+}
+.banner-text p {
+	padding: 0px 10px 0px 10px;
+}
+.project-text {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+    
+#nav-tab {
+	padding-left: 95px;
+}
+#banner {
+	padding-bottom: 170px;
+    }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+	margin-bottom: 5px;
+}
+.tab-text-one {
+	margin-top: 186px;
+}
+.overlay {
+	width: 92%;
+	height: 96%;
+}
+.img-fluid {
+	max-width: 101%;  
+}
+.overlay-video p {
+	 padding-left: 0px; 
+	 padding-right: 0px; 	
+}
+.counter-item h3 {
+	font-size: 24px;
+}
+.tab-text2 {
+	margin-top: 174px;
+}  
+}
+
+/*============== large Device ====================*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #nav-tab {
+	padding-left: 0px;
+}
+}
+
+
+@media(min-width:1200px){
+    
+}
